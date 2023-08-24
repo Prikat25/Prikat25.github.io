@@ -679,19 +679,6 @@ section .container {
   margin: 10px
 }
 
-.services .icon-box .edu{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 10px;
-}
-
-.services .icon-box .edu img {
-  max-width: 100%;
-  height: auto;
-}
-
 .services .icon-box .icon {
   margin: 0 auto;
   width: 64px;
@@ -759,25 +746,6 @@ section .container {
 
 .services .icon-box:hover h4 a, .services .icon-box:hover p {
   color: #12d640;
-}
-
-.image-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-  list-style: none;
-}
-
-.image-gallery > li {
-  height: 300px;
-  flex: 1 1 auto;  /* shorthand for flex-grow, flex-shrink, flex-basis */
-}
-
-.image-gallery li img {
-  object-fit: cover;
-  width: 80%;
-  height: 80%;
-  vertical-align: middle;
 }
 
 /*--------------------------------------------------------------
