@@ -673,10 +673,13 @@ section .container {
 --------------------------------------------------------------*/
 .services .icon-box {
   text-align: center;
-  background: #09203a;
+  background: #143a09;
   padding: 40px 40px;
   transition: all ease-in-out 0.3s;
-  margin: 10px
+  margin: 10px;
+  width: calc(25% - 20px); 
+  float: left; 
+  box-sizing: border-box; 
 }
 
 .services .icon-box .icon {
