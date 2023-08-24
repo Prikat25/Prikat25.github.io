@@ -45,6 +45,15 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
+.background-image-section {
+  background-image: url('assets/img/background/bg5.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* Add more background properties as needed */
+}
+
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
