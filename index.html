@@ -328,21 +328,22 @@
                 <ul style="text-align:left;">
                   <li>Cloud Computing:</li>
                   <ul>
-                  <li>Rewrote Python codebase in Golang using the Echo framework and optimized legacy Postgres queries.</li>
-                  <li>Implemented async processing using Celery and RabbitMQ for VM creation.</li>
+                  <li>Rewrote Python codebase(50K+) in Golang and optimized legacy Postgres queries.</li>
+                  <li>Implemented async processing using Celery and RabbitMQ for virtual machine creation.</li>
                   <li>Engineered Golang APIs, deployed on the Echo framework, to facilitate seamless VM provisioning across VMware and OpenStack platforms.</li>
                   <li>Created comprehensive Swagger documentation for APIs enhancing clarity and facilitating seamless integration.</li>
-                  <li>Integrated Prometheus for server monitoring during VM provisioning.</li>
-                  <li>Teamed up with monitoring colleagues to automate Grafana dashboard creation, improving cluster insights and performance metrics visibility.</li>
-                  <li>Enabled Nagios monitoring on deployment servers, ensuring reliability via notifications during downtime or deployments, resulting in a 25% increase in system uptime.</li>
-                  <li>Led POC for myservers microservices migration to AWS using EC2, S3, EBS, ASG, API Gateway, and VPC.</li>
+                  <li>Integrated Prometheus and Grafana dashboard for 100K+ servers, improving cluster insights and performance metrics visibility.</li>
+                  <li>Enabled Nagios monitoring on 60+ production clusters and 150+ non production deployment servers, ensuring reliability via notifications during downtime or deployments, resulting in a 25% increase in system uptime.</li>
+                  <li>Led POC for microservices migration to AWS using EC2, S3, EBS, ASG, API Gateway, and VPC.</li>
                   <li>Developed Lambda function for data sync between Oracle and Snowflake using serverless architecture.</li>
-                  <li>Integrated logging to Kibana for efficient troubleshooting during on-call.</li>
+                  <li>Leveraged Nagios and Kibana for efficient troubleshooting and RCA during on-call production support.</li>
+                  <li>Effectively executed migration of 1K+ CentOS servers, including production Kubernetes, to Ubuntu 20.04 using Ansible and custom installations via Jenkins pipelines.</li> 
+                  <li>Implemented self-healing for VM creation failures, leading to a notable 25% decrease in downtime during weekly deployment of Rancher on 1K+ servers.</li>
                   </ul>
-                  <li>Ansible Tower and AWX Integration:</li>
+                  <li>UnifiedAccessPro:</li>
                   <ul>
-                  <li>Designed role-based access model and policies for business unit's Ansible projects using Ansible Tower and AWX.</li>
-                  <li>Implemented workflow using Stash, Jenkins, Ansible to onboard projects to AWX through APIs.</li>
+                  <li>Designed role-based access model and policies for business unit's Ansible projects, inventory and credentials using Ansible Tower and AWX.</li>
+                  <li>Implemented Blue/Green deployment using Bitbucket, Jenkins, Ansible, Rancher to onboard projects to AWX serving 1K+ projects.</li>
                   <li>Provided training for operations team on Jenkins, Ansible and Docker.</li>
                   </ul>
                 </ul>
@@ -352,15 +353,25 @@
                 <h5 style="text-align:left;">June 2017 - Dec 2018</h5>
                 <p style="text-align:left;color:#fff"><em>Software Engineer</em></p>
                 <ul style="text-align:left;">
-                  <li>Myservers Self-Service Portal:</li>
+                  <li>Self-Service Patching Portal:</li>
                   <ul>
-                    <li>Developed APIs for operations team to manage schedules and patching, leading to increased customer satisfaction.</li>
+                    <li>Engineered end-to-end data pipeline for Oracle and Redis, deployment, analytics dashboard, proprietary APIs for integration, and Django backend.</li>
                     <li>Configured Redis Sentinel architecture for failover and fine-tuned Oracle queries, ensuring efficient data retrieval and bolstering performance.</li>
                     <li>Implemented Redis message queue pub/sub for backend services to refresh cached data and async order processing.</li>
-                    <li>Led CI/CD deployment workflow using Bitbucket webhooks, Jenkins, SonarQube, pytest across all environments.</li>
-                    <li>Packaged application into Docker images and designed architecture for deployment into EKS using Kubernetes.</li>
-                    <li>Developed predictive models for peak loads and analyzed server data for CPU, memory, and uptime using 50K+ Incident data</li>
+                    <li>Led CI/CD deployment workflow using Bitbucket webhooks, Jenkins, SonarQube, Karma, pytest across all environments.</li>
+                    <li>Established Rancher VM infrastructure 100+ projects, leveraging Jenkins and providing custom Docker and Ansible templates for seamless project onboarding.
+                        Designed to operate without the need for server maintenance, accommodating all Linux flavors.
+                    </li>
+                    <li>Packaged application into Docker images and designed architecture for deployment into Rancher.</li>
+                    <li>Recipient of the 'You've Earned It' award in 2020 for achieving an 80% reduction in deployment time and complete elimination of manual efforts through CI/CD optimization of an enterprise-level application.</li>
                   </ul>
+                  <li>NodeJS CLI for Change Ticket Management:</li>
+                  <ul>
+                    <li>Created a Node.js CLI tool for operations team to manage change tickets and patching in ServiceNow (SNOW).</li>
+                    <li>Developed during the WannaCry ransomware attack to facilitate patching servers and prevent attacks.</li>
+                    <li>Recognized with the 'You've Earned It' award in 2018 for saving ~7 hours/day of manual work.</li>
+                  </ul>
+                  <li>Engineered pivotal microservices for multiple teams, spanning authentication, authorization, encrypted emailing, using Golang, AWS tools (SES, KMS, Lambda, Fargate), and OAuth 2.0</li>
                 </ul>
               </div>
               <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
@@ -368,17 +379,16 @@
                 <h5 style="text-align:left;">July 2016 - May 2017</h5>
                 <p style="text-align:left;color:#fff"><em>Executive Graduate Trainee</em></p>
                 <ul style="text-align:left;">
-                  <li>NodeJS CLI for Change Ticket Management:</li>
-                  <ul>
-                    <li>Created a Node.js CLI tool for operations team to manage change tickets in ServiceNow (SNOW).</li>
-                    <li>Developed during the WannaCry ransomware attack to facilitate patching servers and prevent attacks.</li>
-                  </ul>
                   <li>Self Managed Application Repackaging Tool:</li>
                   <ul>
                     <li>Developed a self-managed application repackaging tool for Windows OS and custom packages using shell and .NET.</li>
                     <li>Utilized WIX tool to bundle the application as an executable for customer installation.</li>
                     <li>Developed frontend website using jQuery and backend using Node.js with SSO and OAuth authentication.</li>
+                    <li>Received best innovation award in 2016 for developing an application that innovatively reduced Server/Desktop packaging time by 70%.</li>
                   </ul>
+                  <li>Engineered real-time security and compliance monitoring dashboard for 90K+ servers utilizing AngularJS, NodeJS
+                    and MongoDB.</li>
+                  <li>Implemented self-healing for CPU and memory issues, reducing incidents by \textbf{80\%}, using .NET and Bash scripts.</li>
                 </ul>
               </div>
               <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
